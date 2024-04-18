@@ -81,8 +81,7 @@ class CrawlCellphone:
         df = pd.DataFrame(data, columns=columns)
         df.to_csv("data_phone.csv")
 
-# Sử dụng các lớp trong giao diện
 obj  = CrawlCellphone()
-data = obj.get_list_phone(10)  # Lấy thông tin 10 sản phẩm
+data = obj.get_list_phone(10)  
 info = obj.get_info_phone(data)  
-obj.data_to_csv(info)  # Lưu thông tin vào file CSV
+obj.data_to_csv(info)  
